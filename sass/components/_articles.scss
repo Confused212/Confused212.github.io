@@ -1,0 +1,90 @@
+.blog {
+    perspective: 10rem;
+    -moz-perspective: 10rem;
+    height: 20rem;
+    &__front {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        margin: 4rem 3rem;
+        transition: all .8s ease;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        box-shadow: 0 3rem 6rem rgba($color-black, 0.3);
+        background-color: $color-white;
+    }
+    &__picture {
+        background-size: cover;
+        background-blend-mode: screen;
+        border-top-right-radius: $border-Radius-small;
+        border-top-left-radius: $border-Radius-small;
+        &-1 {
+            height: 100%;
+            width: auto;
+            transition: all .4s;
+            filter: brightness(70%);
+        }
+    }
+    &__details {
+        margin-right: 2rem;
+        position: relative;
+    }
+    &__heading {
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        flex-direction: column;
+        margin-left: -6rem;
+        z-index: 1000;
+        &-span {
+            padding: 1rem 1.5rem;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            margin: 0 auto;
+            &--1 {
+                background-image: linear-gradient(to right bottom, rgba($color-primary, .85), rgba($color-primary-light, .85));
+                margin-top: -2rem;
+            }
+            &--2 {
+                margin-top: 3rem;
+                background-image: linear-gradient(to right bottom, rgba($color-primary, .85), rgba($color-primary-light, .85));
+            }
+        }
+    }
+    &__para {
+        padding: 1rem 2rem;
+        margin-left: 3rem;
+    }
+    &__para p:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    &__btn {
+        right: -2rem;
+        top: 15rem;
+        &,
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: .9rem 2.5rem;
+            font-size: $default-font-size;
+            // change for the button element
+            border: none;
+            cursor: pointer;
+            // background-color: $color-primary;
+            color: $color-primary;
+            position: absolute;
+            background-image: linear-gradient(130deg, transparent 0%, transparent 50%, $color-primary 50%);
+            background-size: 240%;
+            transition: all .4s;
+        }
+        &:hover,
+        &:active {
+            color: $color-white;
+            background-position: 100%;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.about {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 0 0 40%;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
