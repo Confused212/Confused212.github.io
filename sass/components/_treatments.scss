@@ -56,13 +56,13 @@
         justify-content: center;
         filter: brightness(70%);
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-black, $color-black), url(../../img/treat2.jpg);
+            background-image: linear-gradient(to right bottom, $color-black, $color-black), url(../img/treat2.jpg);
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-black, $color-black), url(../../img/treat3.jpg);
+            background-image: linear-gradient(to right bottom, $color-black, $color-black), url(../img/treat3.jpg);
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-black, $color-black), url(../../img/treat1.jpg);
+            background-image: linear-gradient(to right bottom, $color-black, $color-black), url(../img/treat1.jpg);
         }
     }
     &__heading {
