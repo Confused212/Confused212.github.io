@@ -19,8 +19,10 @@
     &__logo {
         color: $color-primary;
         width: 8rem;
+        height: 8rem;
         @include respond(phone) {
             width: 10rem;
+            height: 10rem;
             margin-left: -1.5rem;
         }
     }
