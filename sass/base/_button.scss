@@ -18,6 +18,13 @@
         transition: color .4s ease;
         letter-spacing: .3rem;
         cursor: pointer;
+        @include respond(tab-port) {
+            margin-top: 8rem;
+        }
+        @include respond(phone) {
+            font-size: 2rem;
+            margin-top: 4rem;
+        }
     }
     &:hover {
         animation: btnMoveInBottom .3s;

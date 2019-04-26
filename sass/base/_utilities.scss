@@ -9,17 +9,20 @@
 .u-margin-bottom-medium {
     margin-bottom: 4rem !important;
     //
-    // @include respond(tab-port) {
-    //     margin-bottom: 3rem !important;
-    // }
+    @include respond(tab-port) {
+        margin-bottom: 3rem !important;
+    }
 }
 
 .u-margin-bottom-big {
     margin-bottom: 8rem !important;
     //
-    // @include respond(tab-port) {
-    //     margin-bottom: 5rem !important;
-    // }
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }
+    @include respond(phone) {
+        margin-bottom: 0 !important;
+    }
 }
 
 .u-margin-top-big {

@@ -5,10 +5,22 @@
         font-size: 6rem;
         letter-spacing: 1.5rem;
         //
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 2rem;
+        }
     }
     &--sub {
         font-size: 2.5rem;
         letter-spacing: 1rem;
+        //
+        @include respond(phone) {
+            letter-spacing: .5rem;
+            font-size: 1.5rem;
+        }
+    }
+    @include respond(phone) {
+        padding-top: 5rem;
     }
 }
 
@@ -21,6 +33,12 @@
     background-image: linear-gradient(to right, $color-primary, $color-primary-light);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+    @include respond(phone) {
+        font-size: 3rem;
+    }
 }
 
 .heading-tertiary {
@@ -36,6 +54,19 @@
     &:not(:last-child) {
         margin-bottom: 1.5rem;
     }
+    @include respond(desktop-large) {
+        font-size: 2.2rem;
+    }
+    @include respond(tab-land) {
+        font-size: 1.5rem;
+    }
+    @include respond(tab-port) {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+    }
+    @include respond(phone) {
+        font-size: $default-font-size;
+    }
 }
 
 h2 {
@@ -44,4 +75,17 @@ h2 {
     font-size: 2.8rem;
     font-weight: 700;
     color: $color-gray-dark-1;
+    //
+    @include respond(desktop-large) {
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+    @include respond(tab-port) {
+        margin-left: 2.5rem;
+        font-size: 2.2rem
+    }
+    @include respond(phone) {
+        font-size: 2.2rem;
+        margin-left: 0;
+    }
 }
