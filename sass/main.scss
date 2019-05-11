@@ -1,12 +1,13 @@
 //
+// @import "../node_modules/bootstrap/scss/bootstrap";
 @import"abstract/variable";
 @import"abstract/mixin";
 //
-@import"additional-pages/about_page";
-@import"additional-pages/blog_page";
-@import"additional-pages/contact_page";
-@import"additional-pages/gallery_page";
-@import"additional-pages/treatments_page";
+@import"pages/about-page";
+@import"pages/blog-page";
+@import"pages/contact-page";
+@import"pages/gallery-page";
+@import"pages/treatments-page";
 //
 @import"base/animations";
 @import"base/base";
@@ -18,6 +19,7 @@
 @import"components/articles";
 @import"components/form";
 @import"components/photo";
+@import"components/popup";
 @import"components/testimonials";
 @import"components/treatments";
 //

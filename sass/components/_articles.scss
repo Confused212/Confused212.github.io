@@ -73,10 +73,10 @@
         margin-left: -6rem;
         z-index: 1000;
         &-span {
-            padding: 1rem 1.5rem;
             box-decoration-break: clone;
             -webkit-box-decoration-break: clone;
-            margin: 0 auto;
+            margin: 2rem auto;
+            padding: .8rem 1.5rem;
             @include respond(desktop-large) {
                 font-size: 2rem;
             }
@@ -88,13 +88,13 @@
             }
             &--1 {
                 background-image: linear-gradient(to right bottom, rgba($color-primary, .85), rgba($color-primary-light, .85));
-                margin-top: -2rem;
+                margin-top: 4rem;
                 @include respond(tab-port) {
                     margin-left: 5.2rem;
                 }
             }
             &--2 {
-                margin-top: 3rem;
+                margin-top: 6rem;
                 background-image: linear-gradient(to right bottom, rgba($color-primary, .85), rgba($color-primary-light, .85));
             }
         }

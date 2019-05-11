@@ -20,6 +20,9 @@
     padding-left: 2rem;
     line-height: 7.5rem;
     flex: 0 0 43%;
+    @include respond(phone) {
+        display: none;
+    }
 }
 
 .form {
