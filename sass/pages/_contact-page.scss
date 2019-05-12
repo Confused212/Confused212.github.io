@@ -16,13 +16,31 @@
         margin-left: 7rem;
         padding-top: 3rem;
     }
-    &__hours {
-        list-style: none;
-        line-height: 5rem;
-        font-weight: 700;
-        color: $color-gray-dark-3;
-        span {
-            color: $color-primary;
+    &__opening {
+        display: flex;
+        &--time {
+            flex: 0 0 40%;
+            text-align: right;
+            padding-top: 3rem;
+            padding-right: 2rem;
+            font-size: 2.5rem;
+            &-hours {
+                list-style: none;
+                line-height: 5rem;
+                font-weight: 700;
+                color: $color-primary-dark;
+            }
+        }
+        &--days {
+            font-size: 2.5rem;
+            margin-left: 10rem;
+            padding-top: 3rem;
+            &-hours {
+                list-style: none;
+                line-height: 5rem;
+                font-weight: 700;
+                color: $color-gray-dark-3;
+            }
         }
     }
 }
