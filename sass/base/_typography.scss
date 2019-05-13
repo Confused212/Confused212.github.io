@@ -44,6 +44,9 @@
     font-size: 2rem;
     text-transform: uppercase;
     color: $color-gray-dark-1;
+    @include respond(phone) {
+        font-size: $default-font-size;
+    }
 }
 
 .paragraph {
@@ -64,7 +67,7 @@
         padding-top: 1rem;
     }
     @include respond(phone) {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 }
 

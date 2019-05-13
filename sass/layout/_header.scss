@@ -23,8 +23,8 @@
         width: 15rem;
         height: 8rem;
         @include respond(phone) {
-            width: 10rem;
-            height: 10rem;
+            width: auto;
+            height: 8rem;
             margin-left: -1.5rem;
         }
     }

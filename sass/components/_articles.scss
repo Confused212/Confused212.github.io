@@ -21,18 +21,19 @@
     }
     &__front {
         display: flex;
-        flex: 1;
+        // flex: 1;
         height: 100%;
         margin: 4rem 3rem;
         transition: all .8s ease;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+        // -webkit-backface-visibility: hidden;
+        // backface-visibility: hidden;
         border-radius: 1.5rem;
         overflow: hidden;
         box-shadow: 0 3rem 6rem rgba($color-black, 0.3);
         background-color: $color-white;
         @include respond(tab-port) {
             flex-direction: column;
+            margin: 0 3rem;
         }
         @include respond(phone) {
             margin: 5rem 0;
@@ -91,6 +92,7 @@
                 margin-top: 4rem;
                 @include respond(tab-port) {
                     margin-left: 5.2rem;
+                    margin-top: 2rem;
                 }
             }
             &--2 {
@@ -106,6 +108,8 @@
             margin-left: 0;
             text-align: justify;
             padding-top: 1.5rem;
+            font-size: $default-font-size;
+            line-height: 3.5rem;
         }
     }
     &__para p:not(:last-child) {
@@ -115,7 +119,7 @@
         right: -2rem;
         top: 15rem;
         @include respond(tab-port) {
-            top: 25rem;
+            top: 23rem;
         }
         @include respond(phone) {
             top: 28rem;

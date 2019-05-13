@@ -59,6 +59,9 @@
 ///////////////////////////////////////
 main {
     padding-top: 8rem;
+    @include respond(tab-port) {
+        padding-top: 0;
+    }
 }
 
 .about {
