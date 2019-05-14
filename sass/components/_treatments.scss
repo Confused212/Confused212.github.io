@@ -89,7 +89,7 @@
             margin-bottom: 3rem;
         }
     }
-    @include respond(tab-port) {
+    @include respond(tab-land) {
         height: auto;
         border-radius: 0;
         background-color: $color-white;

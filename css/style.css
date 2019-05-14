@@ -997,7 +997,7 @@ input::placeholder {
     font-size: 1.7rem; }
     .card__para:not(:last-child) {
       margin-bottom: 3rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 75em) {
     .card {
       height: auto;
       border-radius: 0;
