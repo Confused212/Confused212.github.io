@@ -1170,9 +1170,15 @@ address span {
         margin-left: -1.5rem; } }
   .header__text-box {
     text-align: center; }
+    @media only screen and (min-width: 112.5em) {
+      .header__text-box {
+        margin-top: 12rem; } }
     @media only screen and (max-width: 75em) {
       .header__text-box {
         margin-top: 10rem; } }
+    @media (max-width: 37.5em) {
+      .header__text-box {
+        margin-top: -3rem; } }
 
 .navigation__checkbox {
   display: none; }
@@ -1189,6 +1195,9 @@ address span {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
   text-align: center;
   cursor: pointer; }
+  @media only screen and (min-width: 112.5em) {
+    .navigation__button {
+      top: 4rem; } }
   @media only screen and (max-width: 56.25em) {
     .navigation__button {
       top: 3rem;
@@ -1208,6 +1217,9 @@ address span {
   background-image: radial-gradient(#2998ff, #0E048B);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media only screen and (min-width: 112.5em) {
+    .navigation__background {
+      top: 4.5rem; } }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 3.5rem;

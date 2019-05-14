@@ -33,8 +33,14 @@
     }
     &__text-box {
         text-align: center;
+        @include respond(desktop-large) {
+            margin-top: 12rem;
+        }
         @include respond(tab-land) {
             margin-top: 10rem;
+        }
+        @include respond(phone) {
+            margin-top: -3rem;
         }
     }
 }
