@@ -16,12 +16,12 @@
         cursor: pointer;
         // Media Query
         @include respond(tab-port) {
-            top: 4rem;
-            right: 4rem;
+            top: 3rem;
+            right: 6rem;
         }
         @include respond(phone) {
-            top: 1rem;
-            right: 1rem;
+            top: 1.3rem;
+            right: 2rem;
         }
     }
     &__background {
@@ -36,12 +36,12 @@
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
         // Media Query
         @include respond(tab-port) {
-            top: 4.5rem;
-            right: 4.5rem;
+            top: 3.5rem;
+            right: 6.5rem;
         }
         @include respond(phone) {
-            top: 1.5rem;
-            right: 1.5rem;
+            top: 1.8rem;
+            right: 2.5rem;
         }
     }
     &__nav {

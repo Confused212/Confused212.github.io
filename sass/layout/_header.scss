@@ -10,6 +10,9 @@
     @include respond(tab-port) {
         height: 50vh;
     }
+    @include respond(tab-land) {
+        height: 50vh;
+    }
     &__logo-box {
         padding: 3rem;
         padding-left: 0;
@@ -30,5 +33,8 @@
     }
     &__text-box {
         text-align: center;
+        @include respond(tab-land) {
+            margin-top: 10rem;
+        }
     }
 }

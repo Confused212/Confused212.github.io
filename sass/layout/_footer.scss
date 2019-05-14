@@ -57,7 +57,7 @@
     &__list {
         margin-left: 3rem;
         @include respond(phone) {
-            margin-left: 0;
+            display: none;
         }
         &--link {
             padding-left: 1rem;
@@ -87,7 +87,7 @@
             width: 20rem;
         }
         @include respond(phone) {
-            padding: 0;
+            padding-top: 1rem;
             height: auto;
             width: 15rem;
         }
@@ -98,8 +98,7 @@
         color: $color-gray-light-1;
         font-size: 2rem;
         @include respond(phone) {
-            margin: 1rem;
-            font-size: 1.4rem;
+            display: none;
         }
     }
 }
@@ -115,9 +114,7 @@ address {
         margin-right: 1rem;
     }
     @include respond(phone) {
-        padding-right: 1rem;
-        font-size: 1.3rem;
-        padding-top: 1rem;
+        display: none;
     }
 }
 

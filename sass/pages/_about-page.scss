@@ -57,13 +57,15 @@
 ///////////////////////////////////////
 // main body
 ///////////////////////////////////////
-main {
-    padding-top: 8rem;
-    @include respond(tab-port) {
-        padding-top: 0;
-    }
-}
-
+// main {
+//     padding-top: 8rem;
+//     @include respond(tab-port) {
+//         padding-top: 0;
+//     }
+//     @include respond(tab-land) {
+//         padding-top: 0;
+//     }
+// }
 .about {
     &__card {
         display: flex;
