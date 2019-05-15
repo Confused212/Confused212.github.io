@@ -45,46 +45,37 @@
     background-position: center;
 }
 
-#heading-main {
-    padding-top: 0;
-    ;
+#logo-box {
+    padding-bottom: 0;
 }
 
 #logo-box {
-    padding-bottom: 0;
+    margin-top: -10rem;
 }
 
 ///////////////////////////////////////
 // main body
 ///////////////////////////////////////
-// main {
-//     padding-top: 8rem;
-//     @include respond(tab-port) {
-//         padding-top: 0;
-//     }
-//     @include respond(tab-land) {
-//         padding-top: 0;
-//     }
-// }
 .about {
     &__card {
         display: flex;
         &--image {
+            flex: 0 0 30%;
             margin-right: 7rem;
-            justify-content: center;
             align-self: center;
         }
         &--photo {
             height: auto;
-            width: 40rem;
+            width: 50rem;
             border-radius: 3rem;
             transform: rotate(180deg);
         }
         &--text {
             display: flex;
+            flex: 1;
             flex-wrap: wrap-reverse;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             width: 60%;
         }

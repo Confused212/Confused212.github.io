@@ -4,6 +4,9 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 5rem;
+    @include respond(desktop-large) {
+        margin-top: 0;
+    }
     @include respond(tab-port) {
         margin-top: 8rem;
         flex-direction: column;
