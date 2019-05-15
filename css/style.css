@@ -120,11 +120,11 @@ hr {
     transition: all .4s; }
     .media__info--para {
       color: #f7f7f7 !important;
-      font-size: 1.6rem !important; }
+      font-size: 2rem !important; }
     .media__info--btn {
       position: absolute;
       top: 65%;
-      left: 35%; }
+      left: 40%; }
   .media:hover {
     z-index: 10; }
   .media-blog__info {
@@ -142,11 +142,11 @@ hr {
     transition: all .4s; }
     .media-blog__info--para {
       color: #f7f7f7 !important;
-      font-size: 1.6rem !important; }
+      font-size: 2rem !important; }
     .media-blog__info--btn {
       position: absolute;
       top: 65%;
-      left: 35%; }
+      left: 40%; }
 
 #map {
   height: 40rem;
