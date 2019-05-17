@@ -130,6 +130,10 @@
 
 .posts {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .posts {
+      flex-direction: column;
+      margin: 3rem; } }
 
 .heading__blog--media {
   margin-bottom: 5rem;
@@ -162,6 +166,9 @@
     text-align: center;
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
     transition: all .4s; }
+    @media only screen and (max-width: 56.25em) {
+      .media__info {
+        top: 100%; } }
     .media__info--para {
       color: #f7f7f7 !important;
       font-size: 2rem !important; }
@@ -210,6 +217,9 @@
 
 .location__map {
   flex: 0 0 60%; }
+  @media only screen and (max-width: 56.25em) {
+    .location__map {
+      margin-left: 2rem; } }
 
 .location__times {
   flex: 0 0 40%;
@@ -228,6 +238,10 @@
     padding-top: 3rem;
     padding-right: 2rem;
     font-size: 2.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .location__opening--time {
+        margin: 0 auto;
+        font-size: 2rem; } }
     .location__opening--time-hours {
       list-style: none;
       line-height: 5rem;
@@ -237,6 +251,10 @@
     font-size: 2.5rem;
     margin-left: 10rem;
     padding-top: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .location__opening--days {
+        margin: 0 auto;
+        font-size: 2rem; } }
     .location__opening--days-hours {
       list-style: none;
       line-height: 5rem;
@@ -245,9 +263,9 @@
 
 .heading-contact {
   padding-top: 3rem; }
-
-#heading-location {
-  font-size: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-contact {
+      font-size: 2rem; } }
 
 .gallery {
   display: flex;
@@ -1219,9 +1237,9 @@ address span {
   @media only screen and (max-width: 56.25em) {
     .header {
       height: 50vh; } }
-  @media only screen and (max-width: 75em) {
+  @media (max-width: 37.5em) {
     .header {
-      height: 50vh; } }
+      height: 40vh; } }
   .header__logo-box {
     padding: 3rem;
     padding-left: 0; }
@@ -1452,6 +1470,9 @@ address span {
 
 .section-location {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .section-location {
+      flex-direction: column; } }
 
 .section-gallery {
   text-align: center; }

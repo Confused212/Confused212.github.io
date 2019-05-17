@@ -4,6 +4,10 @@
 
 .posts {
     display: flex;
+    @include respond(tab-port) {
+        flex-direction: column;
+        margin: 3rem;
+    }
 }
 
 .heading__blog--media {
@@ -40,6 +44,9 @@
         text-align: center;
         box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
         transition: all .4s;
+        @include respond(tab-port) {
+            top: 100%;
+        }
         &--para {
             color: $color-gray-light-1 !important;
             font-size: 2rem !important;

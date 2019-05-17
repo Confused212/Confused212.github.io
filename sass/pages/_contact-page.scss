@@ -6,6 +6,9 @@
 .location {
     &__map {
         flex: 0 0 60%;
+        @include respond(tab-port) {
+            margin-left: 2rem;
+        }
     }
     &__times {
         flex: 0 0 40%;
@@ -24,6 +27,10 @@
             padding-top: 3rem;
             padding-right: 2rem;
             font-size: 2.5rem;
+            @include respond(tab-port) {
+                margin: 0 auto;
+                font-size: 2rem;
+            }
             &-hours {
                 list-style: none;
                 line-height: 5rem;
@@ -35,6 +42,10 @@
             font-size: 2.5rem;
             margin-left: 10rem;
             padding-top: 3rem;
+            @include respond(tab-port) {
+                margin: 0 auto;
+                font-size: 2rem;
+            }
             &-hours {
                 list-style: none;
                 line-height: 5rem;
@@ -47,8 +58,7 @@
 
 .heading-contact {
     padding-top: 3rem;
-}
-
-#heading-location {
-    font-size: 3rem;
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
 }
