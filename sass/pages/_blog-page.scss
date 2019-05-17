@@ -43,11 +43,17 @@
         &--para {
             color: $color-gray-light-1 !important;
             font-size: 2rem !important;
+            @include respond(tab-land) {
+                font-size: $default-font-size !important;
+            }
         }
         &--btn {
             position: absolute;
             top: 65%;
             left: 40%;
+        }
+        @include respond(tab-land) {
+            top: 65%;
         }
     }
     &:hover {
@@ -70,11 +76,17 @@
             &--para {
                 color: $color-gray-light-1 !important;
                 font-size: 2rem !important;
+                @include respond(tab-land) {
+                    font-size: $default-font-size !important;
+                }
             }
             &--btn {
                 position: absolute;
                 top: 65%;
                 left: 40%;
+            }
+            @include respond(tab-land) {
+                top: 75%;
             }
         }
     }
