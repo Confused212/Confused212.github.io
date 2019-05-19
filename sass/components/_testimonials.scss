@@ -61,6 +61,10 @@
         padding-top: 3rem;
         transition: .5s;
         font-size: $default-font-size;
+        @include respond(desktop-large) {
+            padding-top: 2rem;
+            font-size: 1.4rem;
+        }
     }
     &__heading {
         margin: 2rem 0 0;
