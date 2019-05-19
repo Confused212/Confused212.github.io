@@ -836,7 +836,8 @@ input {
   input:not(:last-child):focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 0.2rem solid #0bf803; }
+    border-bottom: 0.2rem solid #0bf803;
+    background-color: transparent; }
   input:not(:last-child):focus:invalid {
     border-bottom: 0.2rem solid #f80338; }
 
@@ -1015,14 +1016,10 @@ input::placeholder {
     transform: rotate(180deg) translateY(-60px);
     opacity: 1; }
 
-.treatments {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  @media (max-width: 37.5em) {
-    .treatments {
-      display: inline;
-      margin: 2rem; } }
+@media (max-width: 37.5em) {
+  .treatments {
+    display: inline;
+    margin: 2rem; } }
 
 .card {
   perspective: 150rem;
@@ -1257,9 +1254,7 @@ address span {
         height: 8rem;
         margin-left: -1.5rem; } }
   .header__text-box {
-    text-align: center;
-    justify-content: center;
-    align-content: center; }
+    text-align: center; }
     @media only screen and (min-width: 112.5em) {
       .header__text-box {
         margin-top: 12rem; } }
@@ -1381,7 +1376,7 @@ address span {
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
-    background-color: #333;
+    background-color: #2998ff;
     display: inline-block; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
@@ -1426,8 +1421,7 @@ address span {
   background-image: linear-gradient(to bottom right, rgba(20, 4, 243, 0.8), rgba(255, 255, 255, 0.8)), url(../img/background-2.jpg);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  align-items: center; }
 
 .section-treatments {
   display: flex;
@@ -1440,9 +1434,7 @@ address span {
 .section-testimonials {
   padding: 5rem 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  flex-direction: column; }
 
 .section-contact {
   padding-top: 5rem;

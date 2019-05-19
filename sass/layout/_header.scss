@@ -33,8 +33,6 @@
     }
     &__text-box {
         text-align: center;
-        justify-content: center;
-        align-content: center;
         @include respond(desktop-large) {
             margin-top: 12rem;
         }
