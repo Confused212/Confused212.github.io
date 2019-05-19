@@ -135,9 +135,12 @@
         &:hover {
             transition: .5s;
         }
-        @include respond(tab-land) {
-            padding-top: 2rem;
-        }
+        // @include respond(tab-land) {
+        //     padding-top: 1rem;
+        // }
+        // @include respond(desktop-large) {
+        //     padding-top: 1rem;
+        // }
     }
     #about-review {
         &-para {
