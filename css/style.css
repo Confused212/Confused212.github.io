@@ -7143,6 +7143,11 @@ a.text-dark:hover, a.text-dark:focus {
   transform: translateY(0px);
   transition-delay: 0s; }
 
+@media (min-width: 768px) {
+  .portfolio__logo {
+    height: 10rem !important;
+    width: 6rem; } }
+
 #map {
   height: 40rem;
   margin-bottom: 7rem; }
@@ -7160,6 +7165,10 @@ a.text-dark:hover, a.text-dark:focus {
   .location__hours-open {
     color: #1404f3;
     list-style: none; }
+
+i {
+  font-size: 3rem;
+  color: #1404f3; }
 
 .treatments__page {
   margin-top: -2rem !important;
@@ -7547,6 +7556,10 @@ input::placeholder {
     margin-bottom: 2rem;
     margin-right: 2rem;
     color: #2998ff; }
+
+@media (min-width: 768px) {
+  .popup__content {
+    width: 70%; } }
 
 .testi-slide {
   text-align: center; }
@@ -8009,7 +8022,7 @@ address {
   background-color: #f7f7f7; }
 
 .section-testimonials {
-  background-color: #f7f7f7;
+  background-color: #eee;
   padding: 5rem 0; }
 
 .section-contact {

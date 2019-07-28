@@ -97,3 +97,10 @@
     transform: translateY(0px);
     transition-delay: 0s;
 }
+
+@media (min-width: 768px) {
+    .portfolio__logo {
+        height: 10rem !important;
+        width: 6rem;
+    }
+}
