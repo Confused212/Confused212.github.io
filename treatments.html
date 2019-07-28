@@ -1,189 +1,204 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400,700" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <title>Dr Alexandra Davies - Available Treatments</title>
+    <title>Dr Alexandra Davies - Treatments page</title>
 </head>
 
 <body>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
 
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item "><a href="about.html" class="navigation__link " target="_blank ">About Dr Davies</a></li>
-                <li class="navigation__item "><a href="blog.html " class="navigation__link " target="_blank ">Blog</a></li>
-                <li class="navigation__item "><a href="index.html" class="navigation__link " target="_blank ">Home Page</a></li>
-                <li class="navigation__item "><a href="gallery.html " class="navigation__link " target="_blank ">Gallery</a></li>
-                <li class="navigation__item "><a href="contact.html" class="navigation__link " target="_blank ">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <header class="header" id="header">
-        <div class="header__logo-box">
-            <img src="img/white-logo.png " alt="logo" class="header__logo">
+    <nav class="navbar navbar-expand-lg  navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/header-logo.png " alt="logo" class="header__logo m-auto"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ml-auto pr-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html ">About</a>
+                    </li>
+                    <li class="nav-item pl-4">
+                        <a class="nav-link" href="press.html">Press</a>
+                    </li>
+                    <li class="nav-item pl-4">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item pl-4">
+                        <a class="nav-link" href="portfolio.html ">Portfolio</a>
+                    </li>
+                    <li class="nav-item pl-4">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="header__text-box" id="logo-box">
-            <h1 class="heading-primary" id="heading-main">
-                <div class="heading-primary--main">Treatments</div>
-            </h1>
+    </nav>
+
+    <header class="">
+        <div class="jumbotron bg-cover mt-5">
+            <div class="overlay"></div>
+            <div class="container header__text">
+                <h1 class="display-3 ">Available Treatments</h1>
+            </div>
         </div>
+
+
     </header>
+
     <main>
-        <section class="treatments">
-            <div class="treatments__card">
-                <img src="img/general.jpg" alt="general-photo" class="treatments__card--img">
-                <div class="card__info">
-                    <h2 class="card_heading--primary">
-                        Aesthetic & Restorative Dentistry
-                    </h2>
-                    <h2 class="card_heading--sub">
-                        High quality dental treatments.
-                    </h2>
-                    <a href="treatments-links/restorative.html" class="btn" id="btn">Read More</a>
-                </div>
-            </div>
+        <div class="section-treatments treatments__page px-2 my-3">
+            <div class="row justify-content-around mr-0">
 
-            <div class="treatments__card">
-                <img src="img/invisalign.jpg" alt="general-photo" class="treatments__card--img">
-                <div class="card__info">
-                    <h2 class="card_heading--primary">
-                        Invisalign
-                    </h2>
-                    <h2 class="card_heading--sub">
-                        Watch your smile transform with Invisible braces.
-                    </h2>
-                    <a href="treatments-links/invisalign.html" class="btn" id="btn">Read More</a>
+                <!-- Acupuncture -->
+                <div class="card m-2 col-sm-5  col-xl-3 m-sm-1 p-0 mb-md-4 mx-xl-2 img-fluid text-center  ">
+                    <img class="card-img-top card__image" src="img/acupuncture.jpg" alt="Card image">
+                    <div class="card-img-overlay p-0">
+                        <h4 class="card-title pt-5 pb-4">Acupuncture</h4>
+                        <a href="treatments-html-pages/acupuncture.html" class="btn card__btn p-3">Read More</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="treatments__card">
-                <img src="img/teeth-whitning.jpg" alt="general-photo" class="treatments__card--img">
-                <div class="card__info">
-                    <h2 class="card_heading--primary">
-                        Teeth Whitening
-                    </h2>
-                    <h2 class="card_heading--sub">
-                        Tooth Whitening in an hour!
-                    </h2>
-                    <a href="treatments-links/whitning.html" class="btn" id="btn">Read More</a>
+                <!-- Aesthetic & Restorative Dentistry -->
+                <div class="card m-2 col-sm-5  col-xl-3 m-sm-1 p-0 mb-md-4 mx-xl-2 img-fluid text-center ">
+                    <img class="card-img-top card__image" src="img/aesthetic-restorative-dentistry.jpg" alt="Card__image">
+                    <div class="card-img-overlay  p-0">
+                        <h4 class="card-title pt-5 pb-4">Aesthetic Dentistry</h4>
+                        <a href="treatments-html-pages/aesthetic-dentistry.html" class="btn card__btn p-3">Read More</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="treatments__card">
-                <img src="img/nervous.jpg" alt="general-photo" class="treatments__card--img">
-                <div class="card__info">
-                    <h2 class="card_heading--primary">
-                        Nervous Patients
-                    </h2>
-                    <h2 class="card_heading--sub">
-                        Keep Calm, we'll get you through this.
-                    </h2>
-                    <a href="treatments-links/nervious.html" class="btn" id="btn">Read More</a>
+                <!-- Facial Aesthetics -->
+                <div class="card m-2 col-sm-5  col-xl-3 m-sm-1 p-0 mb-md-4 mx-xl-2 img-fluid text-center ">
+                    <img class="card-img-top card__image" src="img/needle.jpg" alt="Card__image">
+                    <div class="card-img-overlay  p-0">
+                        <h4 class="card-title pt-5 pb-4">Facial Aesthetics</h4>
+                        <a href="treatments-html-pages/facial-aesthetics.html" class="btn card__btn p-3">Read More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="treatments__card">
-                <img src="img/cosmetic.jpg" alt="general-photo" class="treatments__card--img">
-                <div class="card__info">
-                    <h2 class="card_heading--primary">
-                        Cosmetic Dentistry
-                    </h2>
-                    <h2 class="card_heading--sub">
-                        Aesthetic solutions to improve your smile.
-                    </h2>
-                    <a href="treatments-links/cosmetic.html" class="btn" id="btn">Read More</a>
+
+                <!-- Implants -->
+                <div class="card m-2 col-sm-5  col-xl-3 m-sm-1 p-0 mb-md-4 mx-xl-2 img-fluid text-center ">
+                    <img class="card-img-top card__image" src="img/general.jpg" alt="Card__image">
+                    <div class="card-img-overlay  p-0">
+                        <h4 class="card-title pt-5 pb-4">Implants & Restorative </h4>
+                        <a href="treatments-html-pages/restorative-implants.html" class="btn card__btn p-3">Read More</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="treatments__card">
-                <img src="img/needle.jpg" alt="general-photo" class="treatments__card--img">
-                <div class="card__info">
-                    <h2 class="card_heading--primary">
-                        Facial Aesthetics
-                    </h2>
-                    <h2 class="card_heading--sub">
-                        Be Your Best Self
-                    </h2>
-                    <a href="treatments-links/aesthetics.html" class="btn" id="btn">Read More</a>
+                <!-- Invisalign -->
+                <div class="card m-2 col-sm-5  col-xl-3 m-sm-1 p-0 mb-md-4 mx-xl-2 img-fluid text-center ">
+                    <img class="card-img-top card__image" src="img/invisalign.jpg" alt="Card__image">
+                    <div class="card-img-overlay  p-0">
+                        <h4 class="card-title pt-5 pb-4">Invisalign</h4>
+                        <a href="treatments-html-pages/invisalign.html" class="btn card__btn p-3">Read More</a>
+                    </div>
                 </div>
+
+                <!-- Teeth Whitening -->
+                <div class="card m-2 col-sm-5  col-xl-3 m-sm-1 p-0 mb-md-4 mx-xl-2 img-fluid text-center ">
+                    <img class="card-img-top card__image" src="img/teeth-whitning.jpg" alt="Card__image">
+                    <div class="card-img-overlay  p-0">
+                        <h4 class="card-title pt-5 pb-4">Teeth Whitening</h4>
+                        <a href="treatments-html-pages/teeth-whitening.html" class="btn card__btn p-3">Read More</a>
+                    </div>
+                </div>
+
             </div>
+        </div>
 
-        </section>
-
-        <hr>
-        <section class="section-testimonials " id="testimonials-about">
-            <div class="u-center-text u-margin-bottom-small ">
+        <section class="section-testimonials text-center ">
+            <div class="u-center-text pb-5 ">
                 <h3 class="heading-secondary ">
                     Testimonials
                 </h3>
             </div>
-            <div class="testimonials">
-                <div class="review" id="about-review-1">
-
-                    <p class="paragraph review__para" id="about-review-para">
-                        My treatment was very good and I would recommend Dr Davies to everyone</p>
-                    <h4 class="review__heading" id="about-review-heading">
-                        M.W.
-                    </h4>
-                    <h4 class="review__heading">
-                        August 2018
-                    </h4>
+            <!-- First Quote -->
+            <div class="container">
+                <div class="row px-2">
+                    <div class="col-md-12  p-0">
+                        <div class="quote primary">
+                            <blockquote>
+                                <p>
+                                    Dr Davies, Thank you so much for your constant support and advice through out my dental treatment!
+                                </p>
+                            </blockquote>
+                        </div>
+                        <div class="quote-footer text-right">
+                            <div class="quote-author-img">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="">
+                            </div>
+                            <h4 class="text-secondary">December 2018</h4>
+                            <p>
+                                <strong>R.S.</strong>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="review" id="about-review-2">
 
-                    <p class="paragraph review__para" id="about-review-para">
-                        Very nice ladies; made me feel very comfortable and at ease. Thank you</p>
-                    <h4 class="review__heading" id="about-review-heading">
-                        J.C.
-                    </h4>
-                    <h4 class="review__heading">
-                        August 2018
-                    </h4>
+                <!-- Second Quote -->
+                <div class="row px-2">
+                    <div class="col-md-12 p-0 pt-5 pt-md-0 my-md-5 mb-lg-0">
+                        <div class="quote primary">
+                            <blockquote>
+                                <p>
+                                    The best experience I've ever had at the dentist!
+                                </p>
+                            </blockquote>
+                        </div>
+                        <div class="quote-footer text-right pb-5">
+                            <div class="quote-author-img">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+                            </div>
+                            <h4 class="text-secondary"> February 2019</h4>
+                            <p>
+                                <strong>S.H.</strong>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <a href="gallery.html" target="_blank" class="btn">View Gallery</a>
+            <a href="portfolio.html" target="_blank" class="btn">View Portfolio</a>
         </section>
     </main>
+
     <footer class="section-footer">
+        <div class="container">
+            <div class="certs d-none d-md-flex justify-content-around pt-3">
+                <img src="img/aoq5.png" alt="cert 1" class=" certs__img certs__img--1">
+                <img src="img/image023.jpg" alt="cert 2" class=" certs__img certs__img--2">
+                <img src="img/AI-2018.jpg" alt="cert 3" class=" certs__img certs__img--3">
+                <img src="img/Global-Excellence-Logo.jpg" alt="cert 4" class=" certs__img certs__img--4">
+                <img src="img/registered-practitioner.jpg" alt="cert 4" class=" certs__img certs__img--4">
 
-        <div class="details">
-            <div class="details__icons">
-                <div class="details__list">
-                    <a href="https://www.facebook.com/dralexandradavies" class="details__list--link" target="_blank"><img src="img/Facebook-PNG-HD.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/dralexandradavies/" class="details__list--link" target="_blank"><img src="img/Instagram-PNG.png" alt="Instagram"></a>
-                    <!-- <a href="mailto:afd@drdavies.co.uk" class="details__list--link"><img src="img/Blue-Email-PNG.png" alt="Instagram"></a> -->
-                </div>
-                <div class="details__tel">
-                    Tel: 01865 327205
-                </div>
             </div>
-
-            <img src="img/small-logo.png " alt="logo" class="details__logo">
-
-            <div class="details__contact">
-                <address class="details__contact--address">
-               <span class="details__contact--address-span">Wootton Dental Centre</span> <br/>
-                4 Besselsleigh Road <br/>
-                Wootton <br/>
-                Boars Hill <br/>
-                Abingdon <br/>
-                OX13 6DN
-            </address>
+            <div class="details ">
+                <div class="details__icons d-none d-sm-flex flex-lg-column">
+                    <div class="details__list d-flex flex-sm-column mr-sm-5 flex-md-row">
+                        <a href="https://www.facebook.com/dralexandradavies" class="details__list--link" target="_blank"><img src="img/Facebook-PNG-HD.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/dralexandradavies/" class="details__list--link py-sm-4 py-md-0 px-md-2" target="_blank"><img src="img/Instagram-PNG.png" alt="Instagram"></a>
+                        <a href="mailto:afd@drdavies.co.uk" class="details__list--link"><img src="img/Blue-Email-PNG.png" alt="Instagram"></a>
+                    </div>
+                    <div class="details__tel d-sm-none d-lg-flex ">
+                        Tel: 01993 881 842
+                    </div>
+                </div>
+                <img src="img/logo-footer.png " alt="logo" class="details__logo m-auto d-inline-block">
+                <div class="details__contact d-none d-sm-flex">
+                    <address class="details__contact--address">
+                    <span class="details__contact--address-span ">
+                        Long Hanborough Dental Practice</span> <br/> 70b Main Road, Road <br/> Long Hanborough <br/> Witney <br/> OX29 8BD
+                            </address>
+                </div>
             </div>
         </div>
     </footer>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeflNh-mpMYTqSZWGF9H3TM5evLg2YPMg&callback=initMap" async defer></script>
-    <script src="js/script.js " async defer></script>
-</body>
+    <script src="js/script.js"></script>
 
 </html>

@@ -1,71 +1,41 @@
+/////////////////////////////
+//    landing page sections
+/////////////////////////////
 .section-about {
-    padding: 10rem 0;
     background-color: $color-gray-light-1;
-    @include respond(tab-port) {
-        padding-top: 1.5rem;
-    }
-    @include respond(phone) {
-        padding-top: 3rem;
-    }
+    margin-top: -2rem;
+    padding: 5rem 0;
 }
 
-.section-articles {
+.section-media {
     padding: 5rem 0;
     background-size: cover;
-    background-image: linear-gradient( to bottom right, rgba($color-primary, .8), rgba($color-white, .8)), url(../img/background-2.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-image: linear-gradient( to bottom right, rgba($color-primary, .8), rgba($color-white, .8)), url("../../img/background-2.jpg");
 }
 
 .section-treatments {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
     padding: 5rem 0;
     background-color: $color-gray-light-1;
 }
 
 .section-testimonials {
+    background-color: $color-gray-light-1;
     padding: 5rem 0;
-    display: flex;
-    flex-direction: column;
 }
 
 .section-contact {
-    padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding: 5rem 0;
     background-color: $color-gray-light-1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    @include respond(phone) {
-        padding-bottom: 5rem;
-    }
 }
 
 .section-footer {
-    padding: 2rem 0;
     background-image: linear-gradient(to right bottom, rgba($color-primary, 2), rgba($color-white, 0.2));
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-between;
     border-bottom: 1px solid $color-gray-light-3;
-    @include respond(tab-port) {
-        padding-top: 0;
-    }
 }
 
-.section-location {
-    display: flex;
-    @include respond(tab-port) {
-        flex-direction: column;
-    }
-}
-
+//////////////////////////////////////
+//    additional html pages sections
+/////////////////////////////////////
 .section-gallery {
     text-align: center;
 }
@@ -73,4 +43,12 @@
 .section-blog-posts {
     text-align: center;
     background-color: $color-gray-light-1;
+}
+
+/////////////////////////////
+//    treatment page sections
+/////////////////////////////
+.section__acupuncture {
+    background-color: $color-gray-light-1;
+    margin-top: -2rem;
 }

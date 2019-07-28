@@ -1,22 +1,14 @@
 .certs {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     border-bottom: .05rem solid $color-gray-dark-3;
     transition: all .4s;
     &__img {
-        height: 15rem;
-        width: 25rem;
+        height: 9rem;
+        width: auto;
         padding: 2rem;
         padding-top: 0;
         filter: brightness(70%);
         transition: all .4s;
         cursor: pointer;
-        @include respond(tab-port) {
-            height: 10rem;
-            width: auto;
-            padding: 1rem;
-        }
         &--1 {
             &:hover {
                 filter: brightness(100%);
@@ -42,9 +34,6 @@
             }
         }
     }
-    @include respond(phone) {
-        display: none;
-    }
 }
 
 .details {
@@ -56,9 +45,6 @@
     }
     &__list {
         margin-left: 3rem;
-        @include respond(phone) {
-            display: none;
-        }
         &--link {
             padding-left: 1rem;
         }
@@ -71,35 +57,17 @@
                 border: .1rem solid $color-primary;
                 box-shadow: 0 2rem 3rem rgba($color-black, 0.3);
             }
-            @include respond(phone) {
-                height: 4rem;
-                width: 4rem;
-            }
         }
     }
     &__logo {
-        padding-top: 1rem;
-        height: 15rem;
-        width: 30rem;
-        @include respond(tab-port) {
-            padding-top: 1rem;
-            height: auto;
-            width: 20rem;
-        }
-        @include respond(phone) {
-            padding-top: 1rem;
-            height: auto;
-            width: 15rem;
-        }
+        height: 10rem;
+        width: auto;
     }
     &__tel {
-        margin-left: 3rem;
-        padding-top: 1rem;
-        color: $color-gray-light-1;
+        margin-left: 5rem;
+        margin-top: -.5rem;
+        color: $color-primary-dark;
         font-size: 2rem;
-        @include respond(phone) {
-            display: none;
-        }
     }
 }
 
@@ -108,23 +76,73 @@ address {
     margin-right: 3rem;
     padding-right: 2rem;
     font-size: 1.5rem;
-    @include respond(tab-port) {
-        margin-bottom: 1rem;
-        margin-right: 0;
-        margin-right: 1rem;
+}
+
+@media (min-width: 576px) {
+    .details {
+        &__list {
+            padding: 2rem 0;
+            &--link img {
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+        &__logo {
+            height: 8rem;
+        }
+        &__icons {
+            padding-left: 0;
+        }
     }
-    @include respond(phone) {
-        display: none;
+    address {
+        font-size: 1.3rem;
+        margin-right: 1rem;
+        padding-right: 1rem;
+    }
+    address span {
+        font-size: 1.2rem;
     }
 }
 
-address span {
-    font-size: 2rem;
-    color: $color-primary-dark;
-    @include respond(tab-port) {
-        font-size: 1.3rem;
+@media (min-width: 768px) {
+    .details {
+        &__list--link img {
+            height: 4rem;
+            width: 4rem;
+        }
+        &__logo {
+            height: 8rem;
+        }
+        &__icons {
+            margin-right: -4rem;
+        }
     }
-    @include respond(phone) {
-        font-size: 1.3rem;
+}
+
+@media (min-width: 1200px) {
+    .details {
+        &__list--link img {
+            height: 5rem;
+            width: 5rem;
+        }
+        &__logo {
+            height: 9rem;
+        }
+        &__icons {
+            margin-right: -6rem;
+        }
+    }
+    address {
+        font-size: $default-font-size;
+        margin-right: $default-font-size;
+        padding-right: $default-font-size;
+        margin-left: -6rem;
+    }
+    address span {
+        font-size: $default-font-size;
+        font-weight: 700;
+    }
+    .certs__img {
+        height: 12rem;
     }
 }
