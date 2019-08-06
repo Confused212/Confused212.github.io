@@ -7038,8 +7038,7 @@ a.text-dark:hover, a.text-dark:focus {
     width: 38rem;
     height: auto; }
   .about__para {
-    line-height: 2.2rem;
-    font-size: 1.2rem !important; }
+    line-height: 2.2rem; }
   .about__year {
     font-size: 2rem; }
   .about__para::first-letter {
@@ -7055,7 +7054,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 1200px) {
   .container {
-    padding: 0; } }
+    padding: 0; }
+  .about__para {
+    margin-left: -4rem !important; } }
 
 .press__bold {
   font-weight: 700; }
@@ -7153,7 +7154,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 7rem; }
 
 .location__days {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-left: 7rem;
   padding-top: 3rem; }
 
@@ -7169,6 +7170,10 @@ a.text-dark:hover, a.text-dark:focus {
 i {
   font-size: 3rem;
   color: #1404f3; }
+
+@media (min-width: 768px) {
+  .location__days {
+    font-size: 2.5rem; } }
 
 .treatments__page {
   margin-top: -2rem !important;

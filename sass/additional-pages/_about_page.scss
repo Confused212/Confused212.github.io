@@ -27,7 +27,6 @@
         }
         &__para {
             line-height: 2.2rem;
-            font-size: 1.2rem !important;
         }
         &__year {
             font-size: 2rem;
@@ -54,5 +53,8 @@
 @media (min-width: 1200px) {
     .container {
         padding: 0;
+    }
+    .about__para {
+        margin-left: -4rem !important;
     }
 }
