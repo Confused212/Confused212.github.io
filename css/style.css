@@ -7155,12 +7155,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .location__days {
   font-size: 1.8rem;
-  margin-left: 7rem;
-  padding-top: 3rem; }
+  margin-left: 1.6rem;
+  margin-top: 1.4rem; }
 
 .location__hours {
   list-style: none;
-  line-height: 5rem;
+  line-height: 3.5rem;
   font-weight: 700;
   color: #333; }
   .location__hours-open {
@@ -7173,7 +7173,11 @@ i {
 
 @media (min-width: 768px) {
   .location__days {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem;
+    margin-left: 1.9rem;
+    margin-top: 3rem; }
+  .location__hours {
+    line-height: 4.7rem; } }
 
 .treatments__page {
   margin-top: -2rem !important;
