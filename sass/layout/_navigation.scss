@@ -56,7 +56,7 @@
             font-weight: 700;
             padding: 1rem 2rem;
             color: $color-white;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Playfair Display', serif;
             text-decoration: none;
             text-transform: uppercase;
             transition: all .4s;
@@ -88,7 +88,7 @@
     }
     &__icon {
         position: relative;
-        margin-top: 1rem;
+        margin-top: 2.4rem;
         &,
         &::before,
         &::after {

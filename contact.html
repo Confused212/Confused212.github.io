@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <script src="https://kit.fontawesome.com/653850e81d.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,23 +16,23 @@
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/header-logo.png " alt="logo" class="header__logo m-auto"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ml-auto pr-5">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ml-auto pr-md-5 ">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html ">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item pl-4">
+                    <li class="nav-item pl-md-4">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item pl-4">
+                    <li class="nav-item pl-md-4">
                         <a class="nav-link" href="press.html">Press</a>
                     </li>
-                    <li class="nav-item pl-4">
+                    <li class="nav-item pl-md-4">
                         <a class="nav-link" href="treatments.html">Treatments</a>
                     </li>
-                    <li class="nav-item pl-4">
+                    <li class="nav-item pl-md-4">
                         <a class="nav-link" href="portfolio.html ">Portfolio</a>
                     </li>
 
@@ -46,7 +46,6 @@
             <div class="overlay"></div>
             <div class="container header__text mt-5 mt-sm-0 mt-md-5 acupuncture__header-main">
                 <h1 class="display-3 pb-2">Contact Information </h1>
-
             </div>
         </div>
     </header>
@@ -92,34 +91,49 @@
                 </div>
             </div>
         </section>
-        <section class="section-contact">
-            <div class="u-center-text pb-5 ">
-                <h3 class="heading-secondary ">
-                    Lets Talk
-                </h3>
-            </div>
-            <div class="contact container">
-                <div class="heading d-none d-md-flex ">
-                    <h1 class="display-3">Get </br> in </br>Touch</h1>
-                </div>
-                <div class="form m-auto mr-md-3">
-                    <label for="name" class="form__label">Full name here</label>
-                    <input type="text" name="name" id="name" placeholder="+" class="form__text" required>
-
-                    <label for="email" class="form__label">Email Address here</label>
-                    <input type="email" name="email" id="email" placeholder="+" class="form__email" required>
-
-                    <label for="number" class="form__label">Phone number here</label>
-                    <input type="number" name="phone number" id="number" placeholder="+" class="form__number">
-
-                    <label for="message" class="form__label">Got a Question</label>
-                    <input type="text" name="message" id="message" placeholder="+" class="form__message">
-
-                    <input type="button" value="submit" class="form__btn">
-                </div>
-            </div>
-        </section>
-        <section class="section-testimonials text-center  pb-lg-5">
+        <section id="contact" class="bg-light py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <h3 class="heading-secondary pb-2 text-center">get in touch</h3>
+                            <form action="form.php">
+                                <div class="input-group input-group-lg mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>  <!-- input-group-prepend -->
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div> <!-- input-group -->
+    
+                                <div class="input-group input-group-lg mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>  <!-- input-group-prepend -->
+                                    <input type="email" class="form-control" placeholder="Email Address">
+                                </div> <!-- input-group -->
+    
+                                <div class="input-group input-group-lg mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </span>
+                                    </div>  <!-- input-group-prepend -->
+                                    <textarea class="form-control " placeholder="Message" rows="5"></textarea>
+                                </div> <!-- input-group -->
+    
+                                <input type="submit" value="submit" class="btn btn-block mt-lg-5">
+                            </form>
+                         </div> <!-- col-lg-9 -->
+                         <div class="d-none d-lg-block col-lg-3 alight-self-center pt-lg-5">
+                            <img src="img/form-logo.png" alt="form logo" class="img-fluid">
+                         </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </section>
+            <section class="section-testimonials text-center  pb-lg-5">
 
             <div class="u-center-text pb-5 pt-lg-2">
                 <h3 class="heading-tertiary u-margin-bottom-small text-center pt-3">
@@ -176,7 +190,7 @@
 
     <footer class="section-footer">
         <div class="container">
-            <div class="certs d-none d-md-flex justify-content-around pt-3">
+            <div class="certs d-none d-lg-flex justify-content-around pt-3">
                 <img src="img/aoq5.png" alt="cert 1" class=" certs__img certs__img--1">
                 <img src="img/image023.jpg" alt="cert 2" class=" certs__img certs__img--2">
                 <img src="img/AI-2018.jpg" alt="cert 3" class=" certs__img certs__img--3">
@@ -204,7 +218,9 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeflNh-mpMYTqSZWGF9H3TM5evLg2YPMg&callback=initMap" async defer></script>
     <script src="js/script.js"></script>
 </body>

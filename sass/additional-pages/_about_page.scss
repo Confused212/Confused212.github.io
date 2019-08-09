@@ -10,6 +10,71 @@
     font-size: $default-font-size;
 }
 
+
+.navbar-toggler-icon {
+
+    position: relative;
+    color: $color-primary-light;
+    &,
+    &::before,
+    &::after {
+        width: 2.5rem;
+        height: 2px;
+        background-color: $color-primary-light;
+        display: inline-block;
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+    &::before {
+        top: -.8rem;
+    }
+    &::after {
+        top: .8rem;
+    }
+ 
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::before {
+    top: 1rem;
+}
+.navbar-toggler:hover .navbar-toggler-icon::after {
+    top: -1rem;
+}
+
+
+.nav-link {
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-size: 2rem;
+        color: $color-white;
+        font-family: 'Playfair Display', serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .4s;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: .2rem;
+        background-color: $color-primary-light;
+        transition: width .5s;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+    &:hover,
+    &:active {
+        color: $color-primary-light;
+        transform: translatey(-.5rem);
+    }
+}
 @media (min-width: 576px) {
     .about {
         &__photo {
@@ -20,6 +85,12 @@
 }
 
 @media (min-width: 768px) {
+
+    .nav-link:link,
+    .nav-link:visited{
+
+        font-size: $default-font-size;
+    }
     .about {
         &__photo {
             width: 38rem;
@@ -39,6 +110,12 @@
 }
 
 @media (min-width: 992px) {
+
+    .nav-link:link,
+    .nav-link:visited{
+
+        font-size: 2rem;
+    }
     .about {
         &__photo {
             width: 40rem;
