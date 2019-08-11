@@ -2,14 +2,14 @@
 $theme-colors: ( "primary": #1404f3, );
 @import "../node_modules/bootstrap/scss/bootstrap";
 //
-@import"abstract/mixin";
+
 @import"abstract/variable";
 //
 @import"additional-pages/about_page";
 @import"additional-pages/press_page";
 @import"additional-pages/portfolio-page";
 @import"additional-pages/contact_page";
-@import"additional-pages/gallery_page";
+
 @import"additional-pages/treatments_page";
 //
 @import"base/animations";

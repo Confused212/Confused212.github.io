@@ -1,3 +1,8 @@
+///////////////////////////////////
+// About page styles
+///////////////////////////////////
+
+// used to style and size photos
 .about {
     &__photo {
         width: 35rem;
@@ -5,12 +10,17 @@
     }
 }
 
+// adds extra styles to the P tags
 .about__para::first-letter {
     color: $color-primary;
     font-size: $default-font-size;
 }
 
+///////////////////////////////////
+// About page navbar styles
+///////////////////////////////////
 
+// changes the styling of the navbar
 .navbar-toggler-icon {
 
     position: relative;
@@ -38,7 +48,7 @@
     }
  
 }
-
+ // the top and bottom icon move upon hover
 .navbar-toggler:hover .navbar-toggler-icon::before {
     top: 1rem;
 }
@@ -46,7 +56,7 @@
     top: -1rem;
 }
 
-
+// styling the nav links
 .nav-link {
     &:link,
     &:visited {
@@ -75,6 +85,11 @@
         transform: translatey(-.5rem);
     }
 }
+
+///////////////////////////////////
+// media Queries
+///////////////////////////////////
+
 @media (min-width: 576px) {
     .about {
         &__photo {

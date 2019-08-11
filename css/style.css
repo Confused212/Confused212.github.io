@@ -7113,33 +7113,10 @@ a.text-dark:hover, a.text-dark:focus {
 .press__bold {
   font-weight: 700; }
 
-.press__input {
-  font-size: 2rem;
-  font-weight: 200;
-  padding: 2.2rem 1rem;
-  border: 0.15rem solid #999; }
-
-.press__btn {
-  cursor: pointer;
-  border: 0.15rem solid #999;
-  transition: all .2s; }
-  .press__btn:hover {
-    transform: translateY(-0.2 0.5rem);
-    box-shadow: 0.5rem 0.5rem 0.5rem #313131; }
-
-.fas {
-  color: #ccc;
-  font-weight: 700; }
-
-.fas:hover {
-  color: #1404f3; }
-
-/*logo sizing*/
 .portfolio__logo {
   height: 15rem !important;
   width: auto; }
 
-/*Hover Fall Effect*/
 .fall-item {
   width: 100%;
   height: auto;
@@ -7239,10 +7216,6 @@ a.text-dark:hover, a.text-dark:focus {
   .location__hours-open {
     color: #1404f3;
     list-style: none; }
-
-i {
-  font-size: 3rem;
-  color: #1404f3; }
 
 @media (min-width: 768px) {
   .location__days {
@@ -7394,7 +7367,9 @@ body {
   text-transform: uppercase;
   letter-spacing: .2rem;
   background-image: linear-gradient(to right, #2998ff, #1404f3);
+  background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-text-fill-color: transparent; }
 
 .heading-tertiary {
@@ -7483,9 +7458,7 @@ h4 {
     font-size: 2.2rem;
     margin-top: -4rem; }
   .media__heading-span {
-    font-size: 1.6rem; }
-    .media__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(20, 4, 243, 0.85), rgba(41, 152, 255, 0.85)); } }
+    font-size: 1.6rem; } }
 
 .input-group-lg > .form-control,
 .input-group-lg > .custom-select,

@@ -1,4 +1,9 @@
-/*logo sizing*/
+///////////////////////////////////
+// portfolio styles
+///////////////////////////////////
+
+
+// logo sizing
 
 .portfolio__logo {
     height: 15rem !important;
@@ -6,7 +11,7 @@
 }
 
 
-/*Hover Fall Effect*/
+// Hover Fall Effect
 
 .fall-item {
     width: 100%;
@@ -97,6 +102,10 @@
     transform: translateY(0px);
     transition-delay: 0s;
 }
+
+///////////////////////////////////
+// media Queries
+///////////////////////////////////
 
 @media (min-width: 768px) {
     .portfolio__logo {

@@ -1,7 +1,17 @@
+///////////////////////////////////
+//  contact page
+///////////////////////////////////
+
+
+
+// google maps
+
 #map {
     height: 40rem;
     margin-bottom: 7rem;
 }
+
+// days and hours styles
 
 .location {
     &__days {
@@ -21,13 +31,9 @@
     }
 }
 
-
-
-i {
-    font-size: 3rem;
-    color: $color-primary;
-}
-
+///////////////////////////////////
+// media Queries
+///////////////////////////////////
 
 @media (min-width: 768px) {
     .location__days {
